@@ -1,0 +1,546 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #4f3722 url('../images/darkcurtain.jpg') repeat-x;
+	overflow-x: hidden;
+}
+img{
+	border: none;
+}
+.ex p{
+margin-bottom:10px;
+color:#FFFFFF;
+}
+.leftcurtain{
+	width: 50%;
+	height: 495px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	z-index: 11111;
+}
+ .rightcurtain{
+	width: 51%;
+	height: 495px;
+	right: 0px;
+	top: 0px;
+	position: absolute;
+	z-index: 11111;
+}
+.rightcurtain img, .leftcurtain img{
+	width: 100%;
+	height: 100%;
+}
+.mejs-container { 
+	margin: 0 auto; 
+	position: relative;
+	top:0;
+}
+
+.rope{
+	width: 118px;
+	height: 320px;
+	position: absolute;
+	top: -40px;
+	right:200px;
+	z-index: 11111;
+}
+#content{
+	width: 100%;
+	height: auto;
+	margin:0 auto;
+	}
+
+#scr_content{
+	float: left;
+	width:100%;
+	height: 470px;
+	}
+.box{
+	width:auto;
+	margin: 0px auto;
+	display:none;
+	height:500px;
+}
+#list{
+	float: left;
+	width: 100%;
+	height: 355px;
+	/*background: green;*/
+	margin-top:40px;
+	overflow: hidden;
+}
+#cat{
+	width: 200px;
+	height: 191px;
+	position: absolute;
+	left: 80px;
+	top:100px;
+	background: url(../images/cat.png) no-repeat;
+	opacity: 0.9;
+}
+.cat_tit{
+	position: relative;
+	margin:0 auto;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	color: #FFF;
+	font-family: "微软雅黑";
+}
+.cat_con{
+	position: relative;
+	width:190px;
+	height: 140px;
+	margin: 6px auto;
+}
+.li_tit{
+	color: #333;
+	line-height: 40px;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	text-align: center;
+}
+
+#quxian{
+	width:80px;
+	height:150px;
+	background:url(../images/quxian.png) no-repeat;
+	float:right;
+	position: absolute;
+	right: 0;
+	margin-top:-200px;
+	}
+#quxian a{
+	width:80px;
+	height:150px;
+	cursor: hand;
+	display: block;
+}
+.ex{
+	z-index:11112;
+	width:400px;
+	height:200px;
+	float:left;
+	position:absolute;
+	left: 50%;
+	top: 265px;
+	margin:0px auto auto -230px;
+	padding-top:0px;
+	font-family:"微软雅黑",Arial, Helvetica;
+	font-size:24px;
+}
+#pe{
+	width:80px;
+	height:150px;
+	margin:55px auto auto auto;
+	background:url(../images/pe.png) no-repeat;
+}
+
+
+
+
+
+
+/* Turn on a 16x16 scrollbar */
+::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+}
+
+/* Turn on single button up on top, and down on bottom */
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    display: block;
+}
+
+/* Turn off the down area up on top, and up area on bottom */
+::-webkit-scrollbar-button:vertical:start:increment,
+::-webkit-scrollbar-button:vertical:end:decrement {
+    display: none;
+}
+
+/* Place The scroll down button at the bottom */
+::-webkit-scrollbar-button:end:increment {
+    background-image: url(../images/scroll_cntrl_dwn.png);
+}
+
+/* Place The scroll up button at the up */
+::-webkit-scrollbar-button:start:decrement {
+    background-image: url(../images/scroll_cntrl_up.png);
+}
+
+/* Top area above thumb and below up button */
+::-webkit-scrollbar-track-piece:vertical:start {
+    background-image: url(../images/scroll_gutter_top.png), url(../images/scroll_gutter_mid.png);
+    background-repeat: no-repeat, repeat-y;
+}
+
+/* Bottom area below thumb and down button */
+::-webkit-scrollbar-track-piece:vertical:end {
+    background-image: url(../images/scroll_gutter_btm.png), url(../images/scroll_gutter_mid.png);
+    background-repeat: no-repeat, repeat-y;
+    background-position: bottom left, 0 0;
+}
+
+/* The thumb itself */
+::-webkit-scrollbar-thumb:vertical {
+    height: 56px;
+    -webkit-border-image: url(../images/scroll_thumb.png) 8 0 8 0 stretch stretch;
+    border-width: 8 0 8 0;
+}
+
+/*Webkit,Opera9.5+,Ie9+*/
+   ::selection {
+	background: #99CC00;
+	color:#FFF;
+   }
+   /*Mozilla Firefox*/
+   ::-moz-selection {
+	background: #99CC00;
+	color: #FFF;
+    }
+
+
+
+.artist_l {
+	margin: 0 auto; 
+	width: 960px; 
+	position: relative; 
+	height: 354px;
+	list-style:none;
+}
+.artist_l .a1 {
+	left: 0px; 
+	position: absolute;
+	top: 0px;
+
+}
+.artist_l .a2 {
+	left: 240px; 
+	overflow: hidden; 
+	width: 110px; 
+	position: absolute; 
+	top: 0px; 
+	height: 110px;
+}
+.artist_l .a3 {
+	left: 240px; 
+	overflow: hidden; 
+	width: 110px; 
+	position: absolute; 
+	top: 0px; 
+	height: 110px;
+}
+.artist_l .a4 {
+	left: 240px; 
+	overflow: hidden; 
+	width: 110px; 
+	position: absolute; 
+	top: 0px; 
+	height: 110px;
+}
+.artist_l .a5 {
+	left: 240px; 
+	overflow: hidden; 
+	width: 110px; 
+	position: absolute; 
+	top: 0px; 
+	height: 110px;
+}
+.artist_l .a6 {
+	left: 240px; 
+	overflow: hidden; 
+	width: 110px; 
+	position: absolute; 
+	top: 0px; 
+	height: 110px;
+}
+.artist_l .a7 {
+	left: 240px; 
+	overflow: hidden; 
+	width: 110px; 
+	position: absolute; 
+	top: 0px; 
+	height: 110px;
+}
+.artist_l .a8 {
+	left: 240px; 
+	overflow: hidden; 
+	width: 110px; 
+	position: absolute; 
+	top: 0px; 
+	height: 110px;
+}
+.artist_l .a9 {
+	left: 240px; 
+	overflow: hidden; 
+	width: 110px; 
+	position: absolute; 
+	top: 0px; 
+	height: 110px;
+}
+.artist_l .a10 {
+	left: 240px; 
+	overflow: hidden; 
+	width: 110px; 
+	position: absolute; 
+	top: 0px; 
+	height: 110px;
+}
+.artist_l .a11 {
+	left: 240px; 
+	overflow: hidden; 
+	width: 110px; 
+	position: absolute; 
+	top: 0px; 
+	height: 110px;
+}
+.artist_l .a12 {
+	left: 240px; 
+	overflow: hidden; 
+	width: 110px; 
+	position: absolute; 
+	top: 0px; 
+	height: 110px;
+}
+.artist_l .a3 a {
+	padding-right: 10px; 
+	padding-left: 10px;
+	font-size: 12px; 
+	padding-bottom: 10px; 
+	overflow: hidden; 
+	width: 90px; 
+	padding-top: 10px;
+	height: 90px;
+}
+.artist_l .a4 a {
+	padding-right: 10px; 
+	padding-left: 10px;
+	font-size: 12px; 
+	padding-bottom: 10px; 
+	overflow: hidden; 
+	width: 90px; 
+	padding-top: 10px;
+	height: 90px;
+}
+.artist_l .a5 a {
+	padding: 10px;
+	font-size: 12px;  
+	overflow: hidden; 
+	width: 90px;  
+	height: 90px;
+}
+.artist_l .a6 a {
+	padding: 10px; 
+	font-size: 12px;  
+	overflow: hidden; 
+	width: 90px; 
+	height: 90px;
+}
+.artist_l .a8 a {
+	padding: 10px;  
+	font-size: 12px; 
+	overflow: hidden; 
+	width: 90px; 
+	height: 90px;
+}
+.artist_l .a7 a {
+	padding-right: 10px; 
+	padding-left: 10px;
+	font-size: 12px; 
+	padding-bottom: 10px; 
+	overflow: hidden; 
+	width: 90px; 
+	padding-top: 10px; 
+	height: 90px;
+}
+.artist_l .a10 a {
+	padding-right: 10px; 
+	padding-left: 10px;
+	font-size: 12px; 
+	padding-bottom: 10px; 
+	overflow: hidden; 
+	width: 90px; 
+	padding-top: 10px; 
+	height: 90px;
+}
+.artist_l .a11 a {
+	padding-right: 10px; 
+	padding-left: 10px;
+	
+	 font-size: 12px; 
+	 padding-bottom: 10px; 
+	 overflow: hidden; 
+	 width: 90px; 
+	 padding-top: 10px; 
+	 height: 90px;
+}
+.artist_l .a2 a {
+	padding-right: 20px; 
+	padding-left: 30px; 
+
+	font-size: 18px; 
+	padding-bottom: 15px; 
+	overflow: hidden; 
+	width: 182px; 
+	padding-top: 45px; 
+	height: 172px;
+}
+.artist_l .a12 a {
+	padding-right: 20px; 
+	padding-left: 30px; 
+
+	font-size: 18px; 
+	padding-bottom: 15px; 
+	overflow: hidden; 
+	width: 182px; 
+	padding-top: 45px; 
+	height: 172px;
+}
+.artist_l .a9 a {
+	padding-right: 20px; 
+	padding-left: 20px; 
+
+	font-size: 14px; 
+	padding-bottom: 10px; 
+	overflow: hidden; 
+	width: 192px; 
+	padding-top: 10px; 
+	height: 90px;
+}
+.artist_l .a2 {
+	width: 232px; 
+	height: 232px;
+}
+.artist_l .a3 {
+	left: 240px; 
+	top: 244px;
+}
+.artist_l .a4 {
+	left: 362px; 
+	top: 244px;
+}
+.artist_l .a5 {
+	left: 482px; 
+	top: 0px;
+}
+.artist_l .a6 {
+	left: 604px; 
+	top: 0px;
+}
+.artist_l .a7 {
+	left: 482px; 
+	top: 120px;
+}
+.artist_l .a8 {
+	left: 604px; 
+	top: 120px;
+}
+.artist_l .a9 {
+	left: 482px; 
+	width: 232px; 
+	top: 244px;
+}
+.artist_l .a10 {
+	left: 726px; 
+	top: 0px;
+}
+.artist_l .a11 {
+	left: 848px; 
+	top: 0px;
+}
+.artist_l .a12 {
+	left: 726px; 
+	width: 232px; 
+	top: 120px; 
+	height: 232px;
+}
+.artist_l a {
+	background: #99CC00; 
+	filter: alpha(opacity=90); 
+	left: 0px; 
+	color: #fff; 
+	font-family: 'Microsoft YaHei'; 
+	position: absolute; 
+	top: 0px; 
+	opacity: .9;
+}
+.artist_l a:hover {
+	color: #fff;
+}
+.artist_l a strong {
+	line-height: 2em;
+	color:whitesmoke;
+}
+
+#footer{
+	float: left;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	margin-top: 30px;
+	clear: both;
+	font-size: 14px;
+	color: #979797;
+	text-align: center;
+	font-family: "微软雅黑";
+}
+
+
+
+
+/*截图部分*/
+.img_select{
+	width: 1218px;
+	height: 480px;
+	position: absolute;
+	top:0;
+	left: 0;
+	background: #000;
+	z-index: 10002;
+	display: none;
+}
+.img_select .img_output{
+	width: 1218px;
+	height: 480px;
+	display: table-cell;/*图片容器以表格的单元格形式显示*/
+	text-align: center; /* 实现水平居中 */
+	vertical-align: middle; /*实现垂直居中*/
+}
+.img_select .img_output img{
+	box-shadow:0 0 10px #FFF;
+}
+.img_save{
+	position: absolute;
+	right:40px;
+	bottom:100px;
+}
+.img_cancel{
+	position: absolute;
+	right:40px;
+	bottom:50px;
+}
+.img_cancel a,.img_save a{
+	color:#FFF;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	line-height: 25px;
+	text-indent: 10px;
+	text-decoration: none;
+}
+.img_save i{
+	float: left;
+	width: 25px;
+	height: 25px;
+	background: url(../images/save.png) 0 0px;
+}
+.img_cancel i{
+	float: left;
+	width: 25px;
+	height: 25px;
+	background: url(../images/save.png) 0 -25px;
+}
