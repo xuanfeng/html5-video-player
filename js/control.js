@@ -1,6 +1,5 @@
 $(document).ready(function(){
 // HTML5视频
-// author：农航亮
 // time:2013.4.15
 
 
