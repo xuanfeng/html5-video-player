@@ -3,6 +3,16 @@ HTML5-MV show
 
 ##demo地址：[轩枫阁-MV show](http://www.xuanfengge.com/funny/html5/video/)
 
+
+------------------
+###2016.08更新
+
+- 更改写法，代码更加优雅
+- 播放器功能与UI交互分离
+- 更新视频
+- 构建工具基于[Weflow](https://weflow.io/)
+
+
 ###主要功能
 
 - 视频播放基本功能
