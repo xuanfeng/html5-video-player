@@ -1,0 +1,494 @@
+@import "mod-layout";
+
+body {
+	background: #4f3722 url('../img/darkcurtain.jpg') repeat-x;
+	overflow-x: hidden;
+}
+
+.header{
+	position: relative;
+	width: 400px;
+	color: #FFF;
+	margin: 320px auto 0;
+	text-align: center;
+	z-index: 11112;
+	font-family:"微软雅黑",Arial, Helvetica;
+
+	span{
+		font-size: 24px;
+		margin-bottom:10px;
+	}
+
+	img{
+		display: block;
+		width: 80px;
+		height: 150px;
+		margin: 55px auto auto auto;
+	}
+
+}
+.footer{
+	display: none;
+	width: 100%;
+    margin: 40px auto;
+    clear: both;
+    font-size: 14px;
+    color: #979797;
+    text-align: center;
+    font-family: "微软雅黑";
+	a{
+		color: #979797;
+		text-decoration: none;
+	}
+}
+
+.curtain{
+	width: 50%;
+	height: 560px;
+	top: 0px;
+	position: absolute;
+	z-index: 11111;
+	.transition(all 2s ease);
+
+	img{
+		width: 100%;
+		height: 100%;
+	}
+}
+.leftcurtain{
+	left: 0px;
+}
+.rightcurtain{
+	width: 51%;
+	right: 0px;
+}
+.rope{
+	width: 118px;
+	height: 320px;
+	position: absolute;
+	top: -40px;
+	right: 200px;
+	z-index: 11111;
+	.transition(all 1s ease);
+}
+
+.content{
+	display: none;
+	width: 100%;
+	height: auto;
+	margin:0 auto;
+}
+
+.mod-open{
+	.curtain{
+		width: 60px;
+	}
+	.rope{
+		right: 10px;
+		top: 0;
+	}
+	.header{
+		display: none;
+	}
+	.footer{
+		display: block;
+	}
+	.content{
+		display: block;
+	}
+}
+
+
+.video_content {
+    width: 1000px;
+    height: 540px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.video_list{
+	width: 100%;
+	height: 355px;
+	margin-top: 40px;
+	overflow: hidden;
+}
+
+
+
+/*----------------scroll----------------------------*/
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    display: block;
+}
+::-webkit-scrollbar-button:vertical:start:increment,
+::-webkit-scrollbar-button:vertical:end:decrement {
+    display: none;
+}
+::-webkit-scrollbar-button:end:increment {
+    background-color: #F1F1EF;
+}
+::-webkit-scrollbar-button:start:decrement {
+    background-color: #F1F1EF;
+}
+::-webkit-scrollbar-track-piece:vertical:start {
+    background-color: #F1F1EF;
+}
+::-webkit-scrollbar-track-piece:vertical:end {
+    background-color: #F1F1EF;
+}
+::-webkit-scrollbar-thumb:vertical {
+    width: 6px;
+    margin: 0 auto;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.6);
+    border-width: 8 0 8 0;
+}
+
+/*Webkit,Opera9.5+,Ie9+*/
+::selection {
+background: #99CC00;
+color:#FFF;
+}
+/*Mozilla Firefox*/
+::-moz-selection {
+background: #99CC00;
+color: #FFF;
+}
+
+
+
+.artist_l {
+	margin: 0 auto;
+	width: 960px;
+	position: relative;
+	height: 354px;
+	list-style:none;
+
+	li{
+		.flex-center();
+	}
+	img{
+		width: 100%;
+	}
+}
+.artist_l .a1 {
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 230px;
+}
+.artist_l .a2 {
+	left: 240px;
+	overflow: hidden;
+	width: 110px;
+	position: absolute;
+	top: 0px;
+	height: 110px;
+}
+.artist_l .a3 {
+	left: 240px;
+	overflow: hidden;
+	width: 110px;
+	position: absolute;
+	top: 0px;
+	height: 110px;
+}
+.artist_l .a4 {
+	left: 240px;
+	overflow: hidden;
+	width: 110px;
+	position: absolute;
+	top: 0px;
+	height: 110px;
+}
+.artist_l .a5 {
+	left: 240px;
+	overflow: hidden;
+	width: 110px;
+	position: absolute;
+	top: 0px;
+	height: 110px;
+}
+.artist_l .a6 {
+	left: 240px;
+	overflow: hidden;
+	width: 110px;
+	position: absolute;
+	top: 0px;
+	height: 110px;
+}
+.artist_l .a7 {
+	left: 240px;
+	overflow: hidden;
+	width: 110px;
+	position: absolute;
+	top: 0px;
+	height: 110px;
+}
+.artist_l .a8 {
+	left: 240px;
+	overflow: hidden;
+	width: 110px;
+	position: absolute;
+	top: 0px;
+	height: 110px;
+}
+.artist_l .a9 {
+	left: 240px;
+	overflow: hidden;
+	width: 110px;
+	position: absolute;
+	top: 0px;
+	height: 110px;
+}
+.artist_l .a10 {
+	left: 240px;
+	overflow: hidden;
+	width: 110px;
+	position: absolute;
+	top: 0px;
+	height: 110px;
+}
+.artist_l .a11 {
+	left: 240px;
+	overflow: hidden;
+	width: 110px;
+	position: absolute;
+	top: 0px;
+	height: 110px;
+}
+.artist_l .a12 {
+	left: 240px;
+	overflow: hidden;
+	width: 110px;
+	position: absolute;
+	top: 0px;
+	height: 110px;
+}
+.artist_l .a3 a {
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 12px;
+	padding-bottom: 10px;
+	overflow: hidden;
+	width: 90px;
+	padding-top: 10px;
+	height: 90px;
+}
+.artist_l .a4 a {
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 12px;
+	padding-bottom: 10px;
+	overflow: hidden;
+	width: 90px;
+	padding-top: 10px;
+	height: 90px;
+}
+.artist_l .a5 a {
+	padding: 10px;
+	font-size: 12px;
+	overflow: hidden;
+	width: 90px;
+	height: 90px;
+}
+.artist_l .a6 a {
+	padding: 10px;
+	font-size: 12px;
+	overflow: hidden;
+	width: 90px;
+	height: 90px;
+}
+.artist_l .a8 a {
+	padding: 10px;
+	font-size: 12px;
+	overflow: hidden;
+	width: 90px;
+	height: 90px;
+}
+.artist_l .a7 a {
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 12px;
+	padding-bottom: 10px;
+	overflow: hidden;
+	width: 90px;
+	padding-top: 10px;
+	height: 90px;
+}
+.artist_l .a10 a {
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 12px;
+	padding-bottom: 10px;
+	overflow: hidden;
+	width: 90px;
+	padding-top: 10px;
+	height: 90px;
+}
+.artist_l .a11 a {
+	padding-right: 10px;
+	padding-left: 10px;
+
+	 font-size: 12px;
+	 padding-bottom: 10px;
+	 overflow: hidden;
+	 width: 90px;
+	 padding-top: 10px;
+	 height: 90px;
+}
+.artist_l .a1 a {
+	top: -357px;
+}
+.artist_l .a2 a {
+	font-size: 18px;
+	overflow: hidden;
+	top: -232px;
+}
+.artist_l .a12 a {
+	font-size: 18px;
+	overflow: hidden;
+	top: -232px;
+}
+.artist_l .a9 a {
+	font-size: 14px;
+	overflow: hidden;
+}
+.artist_l .a2 {
+	width: 232px;
+	height: 232px;
+}
+.artist_l .a3 {
+	left: 240px;
+	top: 244px;
+}
+.artist_l .a4 {
+	left: 362px;
+	top: 244px;
+}
+.artist_l .a5 {
+	left: 482px;
+	top: 0px;
+}
+.artist_l .a6 {
+	left: 604px;
+	top: 0px;
+}
+.artist_l .a7 {
+	left: 482px;
+	top: 120px;
+}
+.artist_l .a8 {
+	left: 604px;
+	top: 120px;
+}
+.artist_l .a9 {
+	left: 482px;
+	width: 232px;
+	top: 244px;
+}
+.artist_l .a10 {
+	left: 726px;
+	top: 0px;
+}
+.artist_l .a11 {
+	left: 848px;
+	top: 0px;
+}
+.artist_l .a12 {
+	left: 726px;
+	width: 232px;
+	top: 120px;
+	height: 232px;
+}
+.artist_l a {
+	position: absolute;
+	top: -110px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0.9;
+	background: #99CC00;
+	color: #fff;
+	font-family: 'Microsoft YaHei';
+	text-decoration: none;
+	.transition(all 0.25s linear);
+
+	div{
+		width: 80%;
+		.transfrom-center();
+	}
+}
+.artist_l li:hover{
+	a{
+		top: 0;
+	}
+}
+.artist_l a:hover {
+	color: #fff;
+}
+.artist_l a strong {
+	line-height: 2em;
+	color:whitesmoke;
+}
+
+
+
+
+
+
+/*截图部分*/
+.img_select{
+	width: 1218px;
+	height: 480px;
+	position: absolute;
+	top:0;
+	left: 0;
+	background: #000;
+	z-index: 10002;
+	display: none;
+}
+.img_select .img_output{
+	width: 1218px;
+	height: 480px;
+	display: table-cell;/*图片容器以表格的单元格形式显示*/
+	text-align: center; /* 实现水平居中 */
+	vertical-align: middle; /*实现垂直居中*/
+}
+.img_select .img_output img{
+	box-shadow:0 0 10px #FFF;
+}
+.img_save{
+	position: absolute;
+	right:40px;
+	bottom:100px;
+}
+.img_cancel{
+	position: absolute;
+	right:40px;
+	bottom:50px;
+}
+.img_cancel a,.img_save a{
+	color:#FFF;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	line-height: 25px;
+	text-indent: 10px;
+	text-decoration: none;
+}
+.img_save i{
+	float: left;
+	width: 25px;
+	height: 25px;
+	background: url(../img/save.png) 0 0px;
+}
+.img_cancel i{
+	float: left;
+	width: 25px;
+	height: 25px;
+	background: url(../img/save.png) 0 -25px;
+}

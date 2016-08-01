@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    border: none;
+}
+
+.ui-d-n{
+	display: none;
+}
+.ui-po-r{
+	position: relative;
+}
+.ui-po-a{
+	position: absolute;
+}
+
+.transition(@transition) {
+	-webkit-transition:@transition;
+	-moz-transition:@transition;
+	-o-transition:@transition;
+	transition:@transition;
+}
+
+.flex-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.transfrom-center{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

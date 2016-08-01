@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Video Play - 轩枫阁</title>
+	<meta name="robots" content="follow" />
+    <meta name="description" content="轩枫阁，是专注于分享web前端开发技术、前端开发工具资源，追求用户体验设计的个人原创博客。" />
+    <meta name="keywords" content="轩枫阁,前端开发,前端博客,前端技术,web前端开发博客,轩枫,xuanfeng,xuanfengge" />
+    <link rel="stylesheet" href="../css/style-index.css" type="text/css" />
+</head>
+
+<body class="mod-open">
+
+    <!-- <div class="content animated fadeIn"> -->
+    	<div class="header animated fadeIn">
+            <span class="">MV Show</span>
+            <img src="../img/dancer.png" alt="">
+        </div>
+    	<div class="curtain leftcurtain"><img src="../img/frontcurtain.jpg"/></div>
+    	<div class="curtain rightcurtain"><img src="../img/frontcurtain.jpg"/></div>
+    	<a class="js_rope rope" href="javascript:;">
+    		<img src="../img/rope.png"/>
+    	</a>
+
+        <div class="video_content">
+            <div class="videoContainer">
+                <!-- video -->
+                <video id="video" preload="auto" poster="" width="960" height="540" data="0" src="" type="video/mp4"></video>
+                <!-- img_select -->
+                <div class="img_select">
+                    <div class="img_output"></div>
+                    <div class="img_save"><a href="javascript:;" target="_blank"><i></i>保存</a></div>
+                    <div class="img_cancel"><a href="javascript:;" title="返回"><i></i>返回</a></div>
+                </div>
+                <!-- caption -->
+                <div class="js_caption caption">Taylor Swift: 《Love Story》</div>
+                <!-- control -->
+                <div class="js_control control">
+                    <div class="topControl">
+                        <div class="progress">
+                            <span class="bufferBar"></span>
+                            <span class="timeBar"></span>
+                            <span class="timeHandle"></span>
+                            <span class="timeTip"></span>
+                        </div>
+                    </div><!--topControl-->
+
+                    <div class="btmControl">
+                        <div class="btnPlay btn" title="播放/暂停视频"></div>
+                        <div class="btnSound">
+                            <div class="sound sound2 btn" title="静音"></div>
+                            <div class="volume" title="音量">
+                                <span class="volume_wrap"><span class="volumeBar"></span></span>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <span class="current_time"></span> /
+                            <span class="duration_time"></span>
+                        </div>
+
+                        <div class="btnFS btn" title="全屏"></div>
+                        <div class="btnLoop btn" title="循环播放"></div>
+                        <div class="btnLight lighton btn" title="关灯"><div class="light_btn"></div></div>
+                        <!-- <div class="img_btn btn" title="截图"></div> -->
+                    </div><!--btnControl-->
+
+                </div><!--control-->
+                <div class="loading">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div> <!--loading-->
+
+                <!-- prev_next -->
+                <div class="video_nav video_prev animated fadeIn" data-type="prev"></div>
+                <div class="video_nav video_next animated fadeIn" data-type="next"></div>
+
+                <!-- start play -->
+                <div class="start">
+                    <div class="btnPlay init_start"></div>
+                </div>
+
+            </div>
+            <div class="overlay"></div>
+        </div><!--src_content-->
+
+
+
+        <div class="video_list">
+        	<ul class="js_artList artist_l"></ul>
+        </div>
+
+    <!-- </div> -->
+
+    <div class="footer ui-d-n">Copyright © 2016 <a href="http://www.xuanfengge.com/">轩枫阁</a></div>
+
+    <script id="list_tpl" type="text/html">
+        {{each list as video index}}
+            <li class="a{{++index}}" data-id="{{video.id}}">
+                <img src="../img/cover/{{video.id}}.jpg">
+                <a href="javascript:;">
+                    <div>{{video.artist}}<br>{{video.name}}</div>
+                </a>
+            </li>
+        {{/each}}
+    </script>
+    <script type="text/javascript" src="../js/jquery-1.8.1.js"></script>
+    <script type="text/javascript" src="../js/template.js"></script>
+    <script type="text/javascript" src="../js/video-play.js"></script>
+    <script type="text/javascript" src="../js/video-ui.js"></script>
+</body>
+</html>
